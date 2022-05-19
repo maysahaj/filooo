@@ -1,0 +1,7 @@
+mixin testimonial(testiObj)
+	.testimonials__item
+		.testimonials__item-quote
+			i.fas.fa-quote-left.mb-3.text-danger
+			p.testimonials__item-text= testiObj.quote
+		h4.text-danger.mt-3= testiObj.by
+		h6.mb-3.font-italic.font-weight-bold= testiObj.job

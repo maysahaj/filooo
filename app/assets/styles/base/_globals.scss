@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;700&display=swap');
+
+:root {
+	--orange: #F4775C;
+}
+
+*::selection {
+	background: var(--orange);
+	color: #fff;
+}
+
+html,
+body {
+	overflow-x: hidden;
+}
+
+body {
+	direction: rtl;
+	font-family: 'Cairo', sans-serif;
+	color: #363636;
+	text-align: right;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 500;
+}
+
+img {
+	width: 100%;
+}
+
+section {
+	position: relative;
+
+	&:after {
+		position: absolute;
+		content: '';
+		width: 15%;
+		height: .5rem;
+		border-radius: .5rem;
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: 0;
+		background: $mainOrange;
+
+		@include responsive(atLarge) {
+			left: 0;
+			width: 10%;
+		}
+
+
+	}
+
+	.section-title {
+		font-size: 1.625rem;
+		font-weight: 700 !important;
+		text-align: center;
+
+		@include responsive(atMedium) {
+			font-size: 1.8rem !important;
+		}
+
+		@include responsive(atLarge) {
+			font-size: 2rem !important;
+		}
+
+		&--smaller {
+			font-size: 1.5rem !important;
+		}
+
+		&--right {
+			text-align: right;
+		}
+	}
+
+	.section-description {
+		text-align: center;
+		width: 33.3333% !important;
+		margin-left: auto;
+		margin-right: auto;
+
+		@include responsive(atMedium) {
+			width: 50%;
+		}
+	}
+}
+
+.link-danger {
+	text-decoration: none;
+	color: $mainOrange;
+	font-weight: bold;
+
+	&:hover {
+		text-decoration: none;
+		font-weight: bold !important;
+		color: $mainGreen !important;
+	}
+}
+
+.dir-left {
+	direction: ltr !important;
+}

@@ -1,0 +1,39 @@
+doctype html
+html
+	head
+		include ../partials/_meta
+		block pageTitle
+			title Page
+		|
+		|
+		// Styles
+		include ../partials/_styles
+
+	body
+		// Fallback javascript
+		include ../partials/_no-script
+		|
+		|
+		block navbar
+			- let activePage = 'page'
+			include ../partials/_navbar
+
+		block pageBanner
+			include ../partials/_page-banner
+
+		|
+		|
+		block content
+		|
+		|
+		include ../partials/_footer
+		|
+		|
+		include ../partials/_search-overlay
+		|
+		|
+		include ../partials/_modals
+		|
+		|
+		// Scripts
+		include ../partials/_scripts

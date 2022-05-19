@@ -1,0 +1,40 @@
+extends ./layouts/page
+
+//- Blocks
+block pageTitle
+	title تواصل معنا | موقع فيلو للمحتوى القصصي
+
+block navbar
+	- let activePage = 'contact'
+	include ./partials/_navbar
+
+block pageBannerTitle
+	h1.page-banner__title تواصل معنا
+block pageBannerDescription
+	p.page-banner__description يسعدنا أن نكون دائمًا قريبون منك، نساعدك على فهم احتياج أبناءك والعمل على صقل شخصيتهم من خلال خدماتنا التعليمية.
+
+block content
+	section.contact.py-5
+		.container
+			.row
+				.col-md-6
+					.contact__img
+						img(src="images/showcase-bg.png" class="img-fluid" alt="صورة من صفحة تواصل معنا")
+				.col-md-6
+					.contact__message.pt-0.pt-md-5
+						h3.contact__message-title ابق على تواصل معنا
+						p هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص
+
+			.row.mt-5.text-center
+				.col-md-4
+					.mb-4.text-center
+						i.fas.fa-map-marker-alt.fa-3x.text-primary
+					p فلسطين - غزة - حاضنة الأعمال والتكنولوجيا
+				.col-md-4
+					.mb-4.text-center
+						i.fas.fa-envelope.fa-3x.text-primary
+					p email@domain.com
+				.col-md-4
+					.mb-4.text-center
+						i.fas.fa-phone.fa-3x.text-primary
+					p.dir-left (+970) 599 123 456

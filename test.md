@@ -1,0 +1,10 @@
+- `id`
+- `name`
+- `product_id`
+- `variation_id`
+- `quantity`
+- `tax_class`
+- `subtotal`
+- `subtotal_tax`
+- `total`
+- `total_tax`

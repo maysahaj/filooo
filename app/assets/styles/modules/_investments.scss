@@ -1,0 +1,40 @@
+.investments {
+	.card {
+		img {
+			height: 16rem;
+		}
+
+		h6 {
+			font-weight: normal;
+			display: flex;
+			justify-content: space-between;
+
+			span:first-child {
+				font-weight: bold;
+				color: $mainGreen;
+			}
+
+			span:last-child {
+				font-weight: normal;
+			}
+		}
+
+		.investment-info {
+			&__industry {
+				padding-bottom: 1.5rem;
+				position: relative;
+				margin-bottom: 1.5rem;
+
+				&::after {
+					position: absolute;
+					content: '';
+					background: $mainGreen;
+					width: 100%;
+					height: 0.25rem;
+					left: 0;
+					bottom: 0;
+				}
+			}
+		}
+	}
+}

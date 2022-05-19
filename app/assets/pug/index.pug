@@ -1,0 +1,72 @@
+extends ./layouts/default
+
+//- Blocks
+block pageTitle
+	title الرئيسية | موقع فيلو للمحتوى القصصي
+
+block navbar
+	- let activePage = 'home'
+	include ./partials/_navbar
+
+block content
+	// Showcase
+	section.showcase
+		.container
+			.row
+				.col-lg-6
+					h1.mt-0.mt-md-5.pt-5.font-weight-bolder كل تفصيلة ببلدك.. هنحكيها لابنك
+					.showcase__cta
+						button.btn.btn-danger.btn-lg.rounded-pill.mt-5 جرّب الآن
+						.showcase__cta-img
+							img(src="images/play-btn-orange.png")
+
+				.col-lg-6
+					.showcase__image
+						img.img-fluid(src='images/showcase-bg.png' alt='')
+	// showcase-end
+	|
+	|
+	// Videos
+	section#videos-section.videos.py-5
+		h2.section-title.mb-3 بلدك في فيديو!
+		p.section-description شاهد المئات من قصص الأطفال المتنوعة من قصص تاريخية وحيوانات وقصص تعزز قيم مجتمعية
+		.mt-5.owl-carousel
+
+			.videos__item
+				a.videos__item-icon(href="#")
+					img(src="images/play-btn-white.png", alt="")
+			.videos__item
+				a(href="#")
+					img(src="images/play-btn-white.png", alt="")
+			.videos__item
+				a.videos__item-icon(href="#")
+					img(src="images/play-btn-white.png", alt="")
+
+
+	// videos-end
+	|
+	|
+	// Plans
+	section.plans.py-5
+		.section-title.mb-3 خطط الاشتراك
+		.section-description مستعد لإعداد مكتبتك؟ اختر مدة الاشتراك التي تناسبك
+		.container
+			.row.mt-5
+				.col-md-4
+					img.plans__img(src='images/subscription-bg.png')
+				.col-md-4
+					h5.mb-3.font-weight-bold ما مميزات الاشتراك في موقع فيلو؟
+					ul.plans__features
+						li مسارات لا نهائية من القصص
+						li مشاهدة بلا حدود
+						li الإلغاء في أي وقت
+						li تحميل القصص المفضلة للاستماع إليها بدون إنترنت
+
+	// plans-end
+	|
+	|
+	// Testimonials
+	section.testimonials.py-5
+		.section-title.mb-3 آراء مستخدمينا الصغار
+		.section-divider
+			img.testimonials__divider(src="images/divider.png")

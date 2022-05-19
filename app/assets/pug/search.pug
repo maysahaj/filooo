@@ -1,0 +1,71 @@
+extends ./layouts/page
+
+//- Blocks
+block pageTitle
+	title نتائج البحث عن "الأميرة النائمة" | موقع فيلو للمحتوى القصصي
+
+block navbar
+	- let activePage = 'search'
+	include ./partials/_navbar
+
+block pageBannerTitle
+	h1.page-banner__title
+		i.fas.fa-search.text-danger.ml-2.mt-3
+		| نتائج البحث عن "الأميرة النائمة"
+block pageBannerDescription
+
+block content
+	section.search-results.py-5
+		.container
+			.row
+				.col-md-4
+					.search-results__item
+						a(href="#")
+							img(src="images/play-btn-orange.png")
+				.col-md-8
+					span.search-results__item-category قصة حضارية
+					a.search-results__item-title(href="#")
+						h2 الأميرة النائمة
+					p هذا النص هو نص تجريبي لعرض جزء من وصف القصة التي سيتم ادخاله من لوحة التحكم.
+					.search-results__item-info.text-danger
+						p
+							| عدد المشاهدات: &nbsp;
+							span 289 مشاهدة
+						p
+							| التقييم: &nbsp;
+							span 4.5
+						a.btn.btn-link.text-danger.font-weighb-bold ← شاهد القصة
+				.col-md-4
+					.search-results__item
+						a(href="#")
+							img(src="images/play-btn-orange.png")
+				.col-md-8
+					span.search-results__item-category قصة حضارية
+					a.search-results__item-title(href="#")
+						h2 الأميرة النائمة
+					p هذا النص هو نص تجريبي لعرض جزء من وصف القصة التي سيتم ادخاله من لوحة التحكم.
+					.search-results__item-info.text-danger
+						p
+							| عدد المشاهدات: &nbsp;
+							span 289 مشاهدة
+						p
+							| التقييم: &nbsp;
+							span 4.5
+						a.btn.btn-link.text-danger.font-weighb-bold ← شاهد القصة
+				.col-md-4
+					.search-results__item
+						a(href="#")
+							img(src="images/play-btn-orange.png")
+				.col-md-8
+					span.search-results__item-category قصة حضارية
+					a.search-results__item-title(href="#")
+						h2 الأميرة النائمة
+					p هذا النص هو نص تجريبي لعرض جزء من وصف القصة التي سيتم ادخاله من لوحة التحكم.
+					.search-results__item-info.text-danger
+						p
+							| عدد المشاهدات: &nbsp;
+							span 289 مشاهدة
+						p
+							| التقييم: &nbsp;
+							span 4.5
+						a.btn.btn-link.text-danger.font-weighb-bold ← شاهد القصة

@@ -1,0 +1,19 @@
+extends ./layouts/page
+
+//- Blocks
+block pageTitle
+	title قصص حضارية | موقع فيلو للمحتوى القصصي
+
+block navbar
+	- let activePage = 'culturalStories'
+	include ./partials/_navbar
+
+block pageBannerTitle
+	h1.page-banner__title قصص حضارية
+block pageBannerDescription
+	p.page-banner__description شاهد الآلاف من القصص التاريخية التي تتحدث عن البلدان العربية والبلدات الفلسطينية القديمة بالتحديد
+
+block content
+	include ./partials/_stories-section
+	|
+	|

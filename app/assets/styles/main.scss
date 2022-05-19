@@ -1,0 +1,31 @@
+// Main SCSS
+
+// Libraries
+@import 'libs/all.min.scss';
+@import 'libs/bootstrap.min.scss';
+@import 'libs/owl.carousel.min.scss';
+// @import 'libs/owl.theme.default.min.scss';
+
+// Base
+@import 'base/vars';
+@import 'base/mixins';
+@import 'base/globals';
+@import 'base/styles-reset';
+
+// Modules
+@import 'modules/navbar';
+@import 'modules/showcase';
+@import 'modules/videos';
+@import 'modules/_404.scss';
+@import 'modules/testimonials';
+@import 'modules/page-banner';
+@import 'modules/stories-section';
+@import 'modules/side-navbar';
+@import 'modules/plans';
+@import 'modules/contact';
+@import 'modules/search-results';
+
+// Lower global modules
+@import 'modules/modals.scss';
+@import 'modules/footer';
+@import 'modules/search-overlay';

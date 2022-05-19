@@ -1,0 +1,14 @@
+extends ./layouts/default
+
+//- Blocks
+block pageTitle
+	title الرئيسية | موقع فيلو للمحتوى القصصي
+
+block navbar
+	- let activePage = 'home'
+	include ./partials/_navbar
+
+block content
+	section.error-404
+		h2 Ooops...
+		img(src="images/monster.png", alt="هذه الصفحة غير متوفرة!")

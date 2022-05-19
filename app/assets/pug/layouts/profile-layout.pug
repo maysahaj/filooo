@@ -1,0 +1,37 @@
+doctype html
+html
+	head
+		include ../partials/_meta
+		block pageTitle
+			title Profile
+		|
+		|
+		// Styles
+		include ../partials/_styles
+
+	body
+		// Fallback javascript
+		include ../partials/_no-script
+		|
+		|
+		block navbar
+			- let activePage = 'home'
+			include ../partials/_navbar
+		|
+		|
+		block sideNavbar
+			- let activePage = 'profileHome'
+			include ../partials/_side-navbar
+		|
+		|
+		block content
+		|
+		|
+		include ../partials/_footer
+		|
+		|
+		include ../partials/_modals
+		|
+		|
+		// Scripts
+		include ../partials/_scripts

@@ -1,0 +1,19 @@
+// Login Form Modal
+div(id='login-form' class='modal fade' tabindex='-1' role='dialog' aria-labelledby='login-form-label' aria-hidden='true')
+	.modal-dialog(role='document')
+		.modal-content
+			img(src="images/airplane.gif", alt="airplane")
+			.modal-header
+				button.close(type='button' data-dismiss='modal' aria-label='Close')
+					span(aria-hidden='true') &times;
+			.modal-body
+				.form-title.text-center
+					h4 حساب جديد
+					.d-flex.flex-column.text-center
+						form
+							.form-group
+								input#email1.form-control(type='email' placeholder='اسم المستخدم أو البريد الإلكتروني')
+							.form-group
+								input#password1.form-control(type='password' placeholder='كلمة المرور')
+							button.btn.btn-info.btn-block.btn-round(type='button') Login
+// login-form-modal-end

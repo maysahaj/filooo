@@ -1,0 +1,30 @@
+//-
+	- Main navbar
+// Navbar
+nav.navbar.sticky-top.navbar-expand-lg.navbar-light.bg-light.px-3.py-4
+	.container-fluid
+		a.navbar-brand(href='index.html')
+			div.navbar-brand__box
+				h3 موقع فيلو
+		button.navbar-toggler(type='button' data-toggle='collapse' data-target='#main-menu' aria-controls='main-menu' aria-expanded='false' aria-label='Toggle navigation')
+			span.navbar-toggler-icon
+		#main-menu.collapse.navbar-collapse
+			ul.navbar-nav.mx-auto
+				li.nav-item(class=activePage == 'home' ? 'active' : '')
+					a.nav-link(href='index.html') الصفحة الرئيسية
+						span.sr-only (current)
+				li.nav-item(class=activePage == 'culturalStories' ? 'active' : '')
+					a.nav-link(href='cultural-stories.html') قصص حضارية
+				li.nav-item(class=activePage == 'multiTrackStories' ? 'active' : '')
+					a.nav-link(href='multi-track-stories.html') قصص متعددة المسارات
+				li.nav-item(class=activePage == 'contact' ? 'active' : '')
+					a.nav-link(href='contact.html') تواصل معنا
+				li.nav-item(class=activePage == 'about' ? 'active' : '')
+					a.nav-link(href='about.html') من نحن
+			// Navbar Actions
+			.navbar__actions
+					i.fas.fa-search.search-btn
+					i.fas.fa-bell
+					i.fas.fa-user(data-toggle="modal" data-target="#login-form")
+			// navbar-actions-end
+// navbar-end
