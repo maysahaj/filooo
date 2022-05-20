@@ -78,75 +78,28 @@ jQuery(function ($) {
 		}
 	});
 
-	// Videos owl carousel
-	$("#videos-section .owl-carousel").owlCarousel({
-		loop: true,
-		rtl: true,
-		margin: 15,
-		// rewind: true,
-		center: true,
-		stagePadding: 1,
-		autoplay: true,
-		autoplay: true,
-		autoplayTimeout: 3000,
-		autoplayHoverPause: true,
-		smartSpeed: 2000,
-		responsive: {
-			0: {
-				items: 1,
-			},
-			600: {
-				items: 3,
-			},
-			1000: {
-				items: 4,
-			},
-			1200: {
-				items: 6,
-			},
-		},
-	});
 
-	// Testimonials owl carousel
-	$("#testimonials .owl-carousel").owlCarousel({
-		loop: true,
-		nav: true,
-		autoplay: true,
-		autoplayTimeout: 4000,
-		autoplayHoverPause: true,
-		smartSpeed: 2000,
-		responsive: {
-			0: {
-				items: 1,
-
-				
-			},
-			600: {
-				items: 1,
-			},
-			1000: {
-				items: 2,
-			},
-		},
-	});
 });
-$('.testimonialSection .owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    responsiveClass:true,
-    responsive:{
-        0:{
-            items:1,
-            nav:true
+$('.owl-carousel').owlCarousel({
+    rtl: true,
+    loop: true,
+    margin: 10,
+    items: 1,
+    responsiveClass: true,
+    autoplay: true,
+    autoplayHoverPause: true,
+    responsive: {
+        320: {
+            items:1 
         },
-        600:{
-            items:3,
-            nav:false
+        481: {
+            items: 1
         },
-        1000:{
-            items:5,
-            nav:true,
-            loop:false
+        991: {
+            items: 3
+        },
+        1025: {
+            items: 5
         }
     }
-})
+});

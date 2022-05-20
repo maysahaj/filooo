@@ -1,19 +1,6 @@
 .site-footer {
-	.container {
-		position: relative;
-		// padding-bottom: 1.5rem;
+	
 
-		&::after {
-			position: absolute;
-			content: '';
-			width: 25%;
-			height: 0.125rem;
-			background: #FFF;
-			left: 50%;
-			bottom: 0;
-			transform: translateX(-50%);
-		}
-	}
 
 	[class*='col-'] {
 		padding-bottom: 2rem;
@@ -75,5 +62,83 @@
 				color: #fff;
 			}
 		}
+	}
+}
+.site-footer {
+	background-image: url("../images/footerb.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: auto;
+	color: #fffdff;
+	width: 100%;
+	position: absolute;
+}
+.footer_black{
+	top:160px;
+ background-color: #363636;
+ padding-top: 60px;
+ position: relative;
+ clip-path: ellipse(90% 93% at 50% 100%);
+}
+.site-footer h3 {
+	font-size: 16px;
+	color: #fffdff;
+}
+.subscribeInput{
+	border-radius: 10px;
+	height: 50px;
+	background: #f8f8f8;
+	border:0px;
+	padding: 0px 190px 0px 28px;
+}
+.subscribeForm{
+	position: relative;
+}
+
+.subscribeBtn{
+	position: absolute;
+	border-radius: 10px;
+	height: 50px;
+	width: 140px;
+	color: #000000;
+	border: 1px solid #000000;
+	right: 100px;
+	top: 0px;
+	background: #ffffffff;
+	font-weight: bold;
+}
+.subscribeBtn:hover{
+
+	background: #F4775C;
+	font-weight: bold;
+}
+.footer-menu ul {
+	list-style: outside none none;
+	margin: 0;
+	padding: 0;
+}
+.footer-menu ul li {
+
+	padding: 5px 0;
+}
+.footer-menu a {
+	display: block;
+	padding: 5px 0;
+	color: #fff;
+	font-size: 14px;
+}
+.footer-menu a:hover{
+	text-decoration: none;
+	color:#bc1939;
+}
+.end-page a {
+	font-size: 12px;
+}
+@media (max-width: 992px) {   /* responsive mobiles and small devicess*/
+	.subscribeBtn{
+		left: 0px;
+		right: 0px;
+		float: left;
+
 	}
 }
