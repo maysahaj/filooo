@@ -1,0 +1,17 @@
+.singleStory .breadcrumb{
+    background: transparent;
+    color:#000;
+    font-size: 18px;
+
+}
+.breadcrumb-item+.breadcrumb-item::before {
+    display: inline-block;
+    padding-left: .5rem;
+    color:#AAAAAA;
+    content: ">";
+    font-weight: bold;
+}
+.breadcrumb li a{
+    color:#AAAAAA;
+    font-size: 12px;
+}
