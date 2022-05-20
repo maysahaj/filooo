@@ -37,24 +37,7 @@ img {
 section {
 	position: relative;
 
-	&:after {
-		position: absolute;
-		content: '';
-		width: 15%;
-		height: .5rem;
-		border-radius: .5rem;
-		left: 50%;
-		transform: translateX(-50%);
-		bottom: 0;
-		background: $mainOrange;
 
-		@include responsive(atLarge) {
-			left: 0;
-			width: 10%;
-		}
-
-
-	}
 
 	.section-title {
 		font-size: 1.625rem;
