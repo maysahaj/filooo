@@ -197,6 +197,13 @@
 	font-weight: bold;
 	font-size:16px;
 }
-.box-form{
-	border: 1px solid #bc1939;
+
+.box1{
+	border:1px solid #F4775C;
+	padding: 10px;
+	border-radius: 20px;
+	padding:6px 10px;
+}
+.box1:hover{
+background: #F4775C;
 }
