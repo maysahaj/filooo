@@ -1,14 +1,26 @@
 .plans {
+	background-image: url("../images/Path 408.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	object-fit: contain;
+	padding-top: 50px;
+	height: auto;
 	.row {
-		height: 440px;
 		background: $mainLightGreen;
 		align-items: center;
+		padding-top: 50px;
+	}
+    .back_img{
+		background-image: url("../images/path 363.png");
+		object-fit: contain;
+       background-size: contain;
+	   background-repeat: no-repeat;
+
+	}
+	.plans__img{
+		padding: 50px;
 	}
 
-	&__img {
-		width: 250px;
-		object-fit: cover;
-	}
 
 	&__features {
 		list-style: none;
@@ -165,3 +177,26 @@
 
 
 /** end service section **/
+/* */
+ .card-body{
+	padding: 10px 20px;
+}
+.card .sub-select{
+	font-size: 12px;
+    padding-right: 20px;
+
+}
+.card h2{
+	font-weight: bold;
+	font-size:20px;
+}
+.card p{
+	font-size:12px;
+}
+.card h3{
+	font-weight: bold;
+	font-size:16px;
+}
+.box-form{
+	border: 1px solid #bc1939;
+}
