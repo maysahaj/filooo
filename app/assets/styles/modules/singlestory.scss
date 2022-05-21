@@ -46,68 +46,17 @@ font-weight: bold;
     font-weight: bold;
 
 }
-.likeStories .card{
-    border: 1px solid #cfcbcb;
-    border-radius: 10px;
-    width:90%;
+
+.multiStory h2{
+    color:#000;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 150px;
 
 }
-.card .top-card{
-    background-image: url("../images/Base.png");
-    height: 170px;
-    padding: 10px;
+.multiStory p{
+    font-size: 14px;
+    text-align: center;
+
 }
-.likeStories  .card img.card-icon{
-        width: 35px;
-        height: 35px;
-        display: flex;
-        margin: 0 auto;
-        margin-top:50px;
-    }
- .likeStories .card h4.rank-icon{
-        
-        width: 30px;
-        height: 30px;
-        display: flex;
-        float: left;
-    }
-    .likeStories span mark {
-        position: relative;
-        top: 8px;
-        background-color: transparent;
-        border-radius: 20px;
-        color: #000000;
-        font-size: 16px;
-        float: left;
-    }
-.likeStories  .card:hover{
-        background:#F4775C;
-        transition: ease-in all 0.2s;
-        border-radius: 15px;
-        cursor: pointer;
-        box-shadow: .25rem .25rem .25rem rgba(0, 0, 0, .3);
-        transition-duration: 0.4s;
-        -webkit-box-shadow: 2px 10px 30px 1px rgba(0,0,0,0.5);  /* box shadow*/
-        -moz-box-shadow: 2px 10px 30px 1px rgba(0,0,0,0.5);
-        box-shadow: 2px 10px 30px 1px rgba(0,0,0,0.5);
-        color:#ffffff;
-        border: 0px;
-    
-    }
-    .likeStories  .card a{
-        background-color: #ffffffff;
-        color: #F4775C;
-        border:1px solid #F4775C;
-        margin-bottom: 20px;
-    }
-    .likeStories  i.active{
-        color:yellow;
-    }
-    .likeStories .card{
-        width: 100%;
-    }
-    .likeStories h5.card-title{
-        color:#000;
-        font-size: 16px;
-        font-weight: 500;
-    }
