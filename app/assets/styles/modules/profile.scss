@@ -1,14 +1,24 @@
-.ProfilePage .card{
+.ProfilePage .row .card{
   background: red;  
     
 }
 .ProfilePage  .row .card{
     box-shadow: 0 0 32px rgba(0, 0, 0, 0.11);
     border-radius: 10px;
-    background-color: #ffffff;
-    padding:15px;
-    text-align: center;
+    background-color: #C9E8C4;
+    padding:5px;
+    text-align: right;
+    
   }
+  .ProfilePage  .row .card .list-group li{
+    background-color: #C9E8C4;
+  }
+  .ProfilePage  .row .card .list-group-item {
+ 
+    margin-bottom: 0px;
+    border:0px;
+  }
+
   .ProfilePage  .row .card li a{
     font-size: 16px;
     color:#000;
@@ -51,12 +61,21 @@ font-size: 14px;
 .ProfilePage .product-wid-rating i.active{
 color:#e33b3a;
 }
-.ProfilePage   .card-link{
+.ProfilePage  .card-link{
 background: #e33b3a;
 color:#fff;
 padding: 6px 6px;
 
 
+}
+.ProfilePage .card ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
 }
 
 .ProfilePage  .cards-buy a{
