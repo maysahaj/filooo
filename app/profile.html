@@ -77,7 +77,7 @@
                             <img src="images/child1.png" alt="">                           
                         </div>
                         <div class="editprofileUser mt-1">
-                            <a href=""><i class="fa-solid fa-pen-to-square pl-2"></i>تعديل البيانات</a>
+                            <a data-toggle="modal" data-target="#edit-form" href=""><i class="fa-solid fa-pen-to-square pl-2"></i>تعديل البيانات</a>
                         </div>
                         <div class="infoUser mt-1">
                             <h2>وليد  النجار</h2>
@@ -519,6 +519,39 @@
       </div>
     </div>
     <!-- login-form-modal-end-->
+    <div class="modal fade" id="edit-form" tabindex="-1" role="dialog" aria-labelledby="edit-form-label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <div class="editImg">
+                    <img src="images/edit.png" alt="">
+                    <a href=""><i class="fa-solid fa-pen"></i></a>
+                </div>
+                <div class = "modalEdit">
+                    <form>
+                        <div class="mt-3 mb-3">
+                          <input type="text" class="form-control" id="exampleInputEmail1"placeholder="اسم المستخدم">
+                        </div>
+                        <div class="mt-3 mb-3">
+                            <input type="text" class="form-control" id="exampleInputdate"placeholder="تاريخ الميلاد">
+                          </div>
+                          <div class="mt-3 mb-3">
+                            <input type="text" class="form-control" id="exampleInputdate"placeholder="البلد/المدينة ">
+                          </div>
+                          <div class="mt-3 mb-3">
+                              <textarea name="" id="" cols="32" rows="8">عبر عن نفسك</textarea>
+                          </div>
+                        <button type="submit" class="btn btn-block">Submit</button>
+                      </form>
+                </div>
+                
+                
+              </div>
+            </div>
+          </div>
+      </div>
+      <!-- login-form-modal-end-->
     
     
     <!-- Scripts-->

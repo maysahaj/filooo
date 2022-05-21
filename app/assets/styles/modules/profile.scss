@@ -89,3 +89,107 @@
     position: relative;
     width: 100%;
 }
+.edit .modal-content{
+    padding-top: 50px;
+}
+.editImg {
+    display: flex;
+    margin: 0 auto;
+    width: 40%;
+    margin-top:50px;
+}
+.editImg img {
+    display: flex;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    position: relative;
+}
+.editImg a{
+    position: absolute;
+    top: 95px;
+    height: 30px;
+    line-height: 30px;
+    width: 30px;
+    color: #e33b3a;
+    font-size: 16px;
+    right: 185px;
+    text-align: center;
+    border-radius: 50%;
+    background: #ffffff;
+    border:1px solid #e33b3a;
+}
+
+
+.modalEdit  input{
+    padding: 8px 15px;
+    height: 40px;
+    border-radius: 10px;
+    width: 100%;
+    border:1px solid green;
+
+}
+.modalEdit  textarea{
+    padding: 8px 15px;
+    height: 80px;
+    border-radius: 10px;
+    width: 100%;
+    border:1px solid green;
+
+}
+.modalEdit input:hover{
+    outline:none;
+    border:1px solid #f4775c;
+    color:#000000;
+}
+.modalEdit input:focus{
+ text-decoration: none;
+background: #fff;
+color: #f4775c;
+border:1px solid #f4775c;
+outline: none;
+}
+.modalEdit input:active{
+    text-decoration: none;
+   background: #fff;
+   color: #f4775c;
+   border:1px solid #f4775c;
+   outline: none;
+   }
+   .modalEdit textarea:active{
+    text-decoration: none;
+   background: #fff;
+   color: #f4775c;
+   border:1px solid #f4775c;
+   outline: none;
+   }
+   .modalEdit textarea:hover{
+    outline:none;
+    border:1px solid #f4775c;
+    color:#000000;
+}
+.modalEdit textarea:focus{
+ text-decoration: none;
+background: #fff;
+color: #f4775c;
+border:1px solid #f4775c;
+outline: none;
+}
+
+
+
+.modalEdit .btn {
+    background: linear-gradient(to right, #f4775c , #f1512d);
+    border-radius: 10px;
+    color:#ffffff;
+    margin-top: 60px;
+    height: 50px;
+}
+.modalEdit .btn:hover{
+   
+    color:green;
+    background: #ffffff;
+    border: 1px solid #f4775c;
+
+}
