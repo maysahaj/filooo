@@ -381,13 +381,21 @@ background: #F4775C;
     }
     
     .client-info {
+      background-color: #c9e8c4;
+      padding: 20px;
+      border-radius: 30px;
+      width: 80%;
+      margin: 0 auto;
+
       h3 {
         color: #000;
         font-weight: 600;
         margin-bottom: 4px;
+
       }
       p {
-        color: #0084ff;
+        color: #F4775C;
+        font-weight: bold;
         text-transform: uppercase;
       }
     }
