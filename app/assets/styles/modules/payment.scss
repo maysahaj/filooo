@@ -34,6 +34,12 @@
     text-align: right;
  
 }
+.paymentSection .card-payment .card label{
+    font-size: 12px;
+    text-align: right;
+    color:#000;
+ 
+}
 .paymentSection a.btn{
     font-size: 16px;
     color: #ffffff;
@@ -46,8 +52,67 @@ h3.listeNow{
     text-align: center;
 
 }
-.paymentSection span{
+.paymentSection h6.pay{
     font-size: 16px;
     text-align: center;
-    margin: 0 auto;
+
 }
+.paymentSection .card .card-body .p{
+    font-size: 12px;
+}
+
+
+.paymentSection .form-group input{
+    padding: 8px 15px;
+    height: 50px;
+    border-radius: 10px;
+    width: 100%;
+    border:1px solid green;
+    position: relative;
+    padding-right: 50px;
+
+}
+.paymentSection input:hover{
+    outline:none;
+    border:1px solid #f4775c;
+    color:#000000;
+}
+.paymentSection input:focus{
+ text-decoration: none;
+background: #fff;
+color: #f4775c;
+border:1px solid #f4775c;
+outline: none;
+}
+.paymentSection input:active{
+    text-decoration: none;
+   background: #fff;
+   color: #f4775c;
+   border:1px solid #f4775c;
+   outline: none;
+   }
+
+
+.paymentSection.btn {
+    background: linear-gradient(to right, #f4775c , #f1512d);
+    border-radius: 10px;
+    color:#ffffff;
+    margin-top: 60px;
+    height: 50px;
+}
+.paymentSection .btn:hover{
+   
+    color:green;
+    background: #ffffff;
+    border: 1px solid #f4775c;
+
+}
+.form-group span{
+    position: absolute;
+    top:228px;
+    right:40px;
+    color:#AAAAAA;
+}
+
+
+/**/
