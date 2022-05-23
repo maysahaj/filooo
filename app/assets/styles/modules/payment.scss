@@ -69,6 +69,16 @@ h3.listeNow{
     width: 100%;
     border:1px solid green;
     position: relative;
+    padding-right: 15px;
+
+}
+.paymentSection .form-group input.incard{
+    padding: 8px 15px;
+    height: 50px;
+    border-radius: 10px;
+    width: 100%;
+    border:1px solid green;
+    position: relative;
     padding-right: 50px;
 
 }
@@ -113,6 +123,21 @@ outline: none;
     right:40px;
     color:#AAAAAA;
 }
+.paymentSection .confirm input{
+    padding: 8px 15px;
+    height: 50px;
+    border-radius: 10px;
+    width: 100%;
+    border:1px solid green;
+    position: relative;
+    padding-right: 30px;
 
+}
+.confirm .form-group span {
+    position: absolute;
+    top:45px;
+    right:25px;
+    color:#AAAAAA;
+}
 
 /**/
