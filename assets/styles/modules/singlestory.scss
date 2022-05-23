@@ -1,4 +1,4 @@
-.singleStory .breadcrumb{
+ .breadcrumb{
     background: transparent;
     color:#000;
     font-size: 18px;
@@ -12,8 +12,12 @@
     font-weight: bold;
 }
 .breadcrumb li a{
-    color:#f4775c;
-    font-size: 12px;
+    color:#000;
+    font-size: 16px;
+}
+.breadcrumb .active a{
+    color:#F4775C;
+
 }
 .titleSingle h2{
     font-weight: bold;
