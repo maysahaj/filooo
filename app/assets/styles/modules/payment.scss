@@ -169,4 +169,12 @@ outline: none;
     height: 20px;
     width: 20px;
 }
+@media (max-width: 992px) {  
+    .paymentSection .form-group span{
+     display: none;
+    }
+    .confirm .form-group span {
+     display: none;
+    }
+}
    
