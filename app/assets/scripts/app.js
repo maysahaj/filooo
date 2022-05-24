@@ -80,7 +80,7 @@ jQuery(function ($) {
 
 
 });
-$('.owl-carousel').owlCarousel({
+$('#videos-section .owl-carousel').owlCarousel({
     rtl: true,
     loop: true,
     margin: 10,
@@ -130,3 +130,27 @@ $(document).ready(function () {
 
 }(jQuery));
 
+
+$('#testimonial-area .owl-carousel').owlCarousel({
+	rtl: true,
+    loop: true,
+    margin: 10,
+    items: 1,
+    responsiveClass: true,
+    autoplay: true,
+    autoplayHoverPause: true,
+    responsive: {
+        320: {
+            items:1 
+        },
+        481: {
+            items: 1
+        },
+        991: {
+            items: 1
+        },
+        1025: {
+            items: 1
+        }
+    }
+});
