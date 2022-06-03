@@ -56,10 +56,10 @@
         </div>
      </div>
     </section>
-]
+
     <section class = "paymentSection">
       <div class="container">
-        <div class="row">
+        <div class="row mb-3">
           <div class="col-md-4 text-center align-self-center">
             <img src="images/payment.png" alt="">
           </div>
@@ -85,15 +85,50 @@
                 <div class="card-payment">
                   <div class="card">
                     <h4>بطاقة الائتمان / الخصم المباشر</h4>
-                    <p>ادفع ببطاقة الائتمان أو الخصم. بعد إدخال تفاصيل بطاقتك، قد تتم 
+                    <p class ="mt-5">ادفع ببطاقة الائتمان أو الخصم. بعد إدخال تفاصيل بطاقتك، قد تتم 
                       إعادة توجيهك إلى checkout.com أو البنك الذي تتعامل معه لإكمال 
                       طريقة الدفع بنظام الأمان ثلاثي الأبعاد</p>
-
+                      <form>
+                        <div class="form-group">
+                          <label for="formGroupExampleInput">رقم البطاقة</label>
+                          <input type="text" class=" incard" id="formGroupExampleInput" placeholder="123456789">
+                          <span> 
+                            <i class="fas fa-credit-card"></i>
+                          </span>
+                        </div>
+                        <div class="row">
+                          <div class="col">
+                            <div class="form-group ">
+                              <label for="formGroupExampleInput2">تاريخ الانتهاء </label>
+                              <input type="text" id="formGroupExampleInput2" placeholder="15/12/2023">
+                            </div>
+                          </div>
+                          <div class="col confirm">
+                            <div class="form-group">
+                              <label for="formGroupExampleInput2">رمز التحقق من البطاقة</label>
+                              <input type="text" id="formGroupExampleInput2" placeholder="123">
+                              <span> 
+                                <i class="fas fa-credit-card"></i>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
                   </div>
                 </div>
+                <div class="form-check mt-4">
+                  <label class="form-check-label" for="defaultCheck1">
+                      أقبل الشروط
+                      <a href="">Storytel Unlimited</a>
+                    </label>
+                    <input class="form-check-input-reverse" type="checkbox" value="" id="defaultCheck1">
+                  </div>
                 <h3 class = "listeNow mt-4">استمع بلا حدود</h3>
-                <span>ادفع الأن <mark>50%</mark></span>
+                <h6 class  = "text-center pay">ادفع الأن <mark>50%</mark></h6>
                 <a href="#" class="btn btn-block">اشترك الان</a>
+                <p class = "p">من الجيد أن تعرف: بعد 3 أيام ، سيتحول الاشتراك تلقائيًا إلى اشتراك منتظم 
+                  وستدفع 50 دولار بعد 30 يوم 
+                </p>
               </div>
             </div>
           </div>
@@ -107,20 +142,20 @@
     
     <!-- Footer-->
     <!-- footer-end-->
-     <footer class="site-footer ">
+    <footer class="site-footer ">
       <div class="footer_black">
         <div class="container">
           <div class="row">
-            <div class="col-md-1"></div>
-            <div class="col-md-3 col-sm-12">
+            <div class="col-md-4 col-sm-12">
               <h3>تسجيل الدخول في الموقع </h3>
               <div class="mt-3">
                 <div class="offset-md-2">
                   <form class="subscribeForm" action="">
                     <div class="form-group">
-                      <button class="btn subscribeBtn">تسجيل االدخول</button>
+                      <button class="btn subscribeBtn">تسجيل الدخول</button>
                       <input type="email" class="form-control subscribeInput" placeholder="االبريد الالكتروني">
                     </div>
+                    
                   </form>
                   
                 </div>

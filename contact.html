@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="مشروع ريادي يقدم قصص متعددة المسارات وقصص حضارية بشكل إبداعي.">
     <meta name="author" content="Mahmoud El Helou">
@@ -17,19 +18,19 @@
       <div class="alert alert-danger" role="alert">The website may not work as intended to be, since there is a heavy depends on Javascript and now it's disabled in your browser, please <a class="alert-link" href="https://www.enable-javascript.com/" target="_blank">enable it</a>, then reload the page.</div>
     </noscript>
     
-    <!-- Navbar-->
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light px-3 py-4">
+     <!-- Navbar-->
+     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light px-3 py-4">
       <div class="container-fluid"><a class="navbar-brand" href="index.html">
           <div class="navbar-brand__box">
-            <h3>موقع فيلو</h3>
+            <img src="images/logo.png" alt="">
           </div></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="main-menu">
           <ul class="navbar-nav mx-auto">
-            <li class="nav-item"><a class="nav-link" href="index.html">الصفحة الرئيسية<span class="sr-only">(current)</span></a></li>
+            <li class="nav-item active"><a class="nav-link" href="index.html">الصفحة الرئيسية<span class="sr-only">(current)</span></a></li>
             <li class="nav-item"><a class="nav-link" href="cultural-stories.html">قصص حضارية</a></li>
             <li class="nav-item"><a class="nav-link" href="multi-track-stories.html">قصص متعددة المسارات</a></li>
-            <li class="nav-item active"><a class="nav-link" href="contact.html">تواصل معنا</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">تواصل معنا</a></li>
             <li class="nav-item"><a class="nav-link" href="about.html">من نحن</a></li>
           </ul>
           <!-- Navbar Actions-->
@@ -40,7 +41,7 @@
     </nav>
     <!-- navbar-end-->
     <!-- Page Banner-->
-    <section class="page-banner">
+    <section class="page-banner contact">
       <div class="page-banner__content">
         <h1 class="page-banner__title">تواصل معنا</h1>
         <p class="page-banner__description">يسعدنا أن نكون دائمًا قريبون منك، نساعدك على فهم احتياج أبناءك والعمل على صقل شخصيتهم من خلال خدماتنا التعليمية.</p>
@@ -79,7 +80,74 @@
     </section>
     
     <!-- Footer-->
-    <footer class="site-footer py-5 bg-dark text-white"><img src="images/footer-bg.png"></footer>
+    <footer class="site-footer ">
+      <div class="footer_black">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-sm-12">
+              <h3>تسجيل الدخول في الموقع </h3>
+              <div class="mt-3">
+                <div class="offset-md-2">
+                  <form class="subscribeForm" action="">
+                    <div class="form-group">
+                      <button class="btn subscribeBtn">تسجيل الدخول</button>
+                      <input type="email" class="form-control subscribeInput" placeholder="االبريد الالكتروني">
+                    </div>
+                    
+                  </form>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="footer-menu text-center">
+                <ul>
+                    <li><a href="#">من نحن</a></li>
+                    <li><a href="#">تواصل معنا</a></li>
+                    <li><a href="#">شروط</a></li>
+  
+  
+                </ul>                        
+            </div>
+            </div>
+            <div class="col-md-5">
+              <div class="row end-page">
+                <div class="col-md-3">
+                  <div class="footer-menu text-center">
+                    <ul>
+                        <li><a>palestine,Gaza</a></li>
+                        <li><a>+44 345 678 903</a></li>
+                        <li><a>filo@gmail.com</a></li>
+      
+      
+                    </ul>      
+                                      
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="footer-menu text-center">
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+      
+      
+                    </ul>      
+                                      
+                  </div>
+                </div>
+  
+              </div>
+  
+            </div>
+  
+            
+          </div>
+        </div>
+
+      </div>
+
+    </footer>
     <!-- footer-end-->
     
     <!-- Search overlay-->
@@ -100,25 +168,67 @@
     </div>
     
     <!-- Modals-->
-    <!-- Login Form Modal-->
-    <div class="modal fade" id="login-form" tabindex="-1" role="dialog" aria-labelledby="login-form-label" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content"><img src="images/airplane.gif" alt="airplane">
-          <div class="modal-header">
-            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          </div>
+       <!-- Login Form Modal-->
+     <!-- Login Form Modal-->
+     <div class="modal fade" id="login-form" tabindex="-1" role="dialog" aria-labelledby="login-form-label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
           <div class="modal-body">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+            <img src="images/airplane.gif" alt="airplane">
             <div class="form-title text-center">
-              <h4>حساب جديد</h4>
+              <h4 class = "text-center mb-3">تسجيل دخول</h4>
               <div class="d-flex flex-column text-center">
                 <form>
                   <div class="form-group">
-                    <input class="form-control" id="email1" type="email" placeholder="اسم المستخدم أو البريد الإلكتروني">
+                    <input  id="email1" type="email" placeholder="اسم المستخدم أو البريد الإلكتروني">
                   </div>
                   <div class="form-group">
-                    <input class="form-control" id="password1" type="password" placeholder="كلمة المرور">
+                    <input id="password" type="password" placeholder="كلمة المرور">
                   </div>
-                  <button class="btn btn-info btn-block btn-round" type="button">Login</button>
+                  <button class=" btn btn-block btn11 mt-1" type="button"><a>تسجيل الدخول</a>
+                     </button>
+                     <p class = "mt-3">اذا لم يكن لديك حساب أنشئ <a href="" data-toggle="modal" data-target="#sign-form">حساب جديد</a></p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- login-form-modal-end-->
+    <!-- signup Form Modal-->
+    <div class="modal fade" id="sign-form" tabindex="-1" role="dialog" aria-labelledby="sign-form-label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+            <img src="images/airplane.gif" alt="airplane">
+            <div class="form-title text-center">
+              <h4 class = "text-center mb-3">حساب جديد</h4>
+              <div class="d-flex flex-column text-center">
+                <form>
+                  <div class="form-group">
+                    <input id="name1" type="text" placeholder="الاسم">
+                  </div>
+                  <div class="form-group">
+                    <input  id="email1" type="email" placeholder="اسم المستخدم أو البريد الإلكتروني">
+                  </div>
+                  <div class="form-group">
+                    <input  id="date1" type="text" placeholder="تاريخ الميلاد">
+                  </div>
+                  <div class="form-group">
+                    <input id="password" type="password" placeholder="كلمة المرور">
+                  </div>
+                  <div class="form-check mb-3 pr-3 float-right">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">تذكرني</label>
+                  </div>
+                  <button class=" btn btn-block btn11" type="button"><a>تسجيل جديد</a>
+                     </button>
+                     <p class = "mt-3">هل لديك حساب <a href="">تسجيل دخول</a></p>
                 </form>
               </div>
             </div>

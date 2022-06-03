@@ -34,20 +34,147 @@
     text-align: right;
  
 }
+.paymentSection .card-payment .card label{
+    font-size: 12px;
+    text-align: right;
+    color:#000;
+ 
+}
 .paymentSection a.btn{
     font-size: 16px;
     color: #ffffff;
     margin-top: 20px;
     margin-bottom: 20px;
+    font-weight: bold;
  
+}
+.paymentSection .btn {
+    background: linear-gradient(to right, #f4775c , #f1512d);
+    border-radius: 10px;
+    color:#ffffff;
+    margin-top: 60px;
+    height: 50px;
+    line-height: 37px;
 }
 h3.listeNow{
     font-size: 16px;
     text-align: center;
 
 }
-.paymentSection span{
-    font-size: 16px;
+.paymentSection h6.pay{
+    font-size: 14px;
     text-align: center;
-    margin: 0 auto;
+
 }
+.paymentSection .card .card-body .p{
+    font-size: 12px;
+}
+
+
+.paymentSection .form-group input{
+    padding: 8px 15px;
+    height: 50px;
+    border-radius: 10px;
+    width: 100%;
+    border:1px solid green;
+    position: relative;
+    padding-right: 15px;
+
+}
+.paymentSection .form-group input.incard{
+    padding: 8px 15px;
+    height: 50px;
+    border-radius: 10px;
+    width: 100%;
+    border:1px solid green;
+    position: relative;
+    padding-right: 50px;
+
+}
+.paymentSection input:hover{
+    outline:none;
+    border:1px solid #f4775c;
+    color:#000000;
+}
+.paymentSection .form-group input:focus{
+ text-decoration: none;
+background: #fff;
+color: #f4775c;
+border:1px solid #f4775c;
+outline: none;
+}
+.paymentSection input:active{
+    text-decoration: none;
+   background: #fff;
+   color: #f4775c;
+   border:1px solid #f4775c;
+   outline: none;
+   }
+
+
+.paymentSection.btn {
+    background: linear-gradient(to right, #f4775c , #f1512d);
+    border-radius: 10px;
+    color:#ffffff;
+    margin-top: 60px;
+    height: 50px;
+}
+.paymentSection .btn:hover{
+   
+    color:green;
+    background: #ffffff;
+    border: 1px solid #f4775c;
+
+}
+.form-group span{
+    position: absolute;
+    top:228px;
+    right:40px;
+    color:#AAAAAA;
+}
+.paymentSection .confirm input{
+    padding: 8px 15px;
+    height: 50px;
+    border-radius: 10px;
+    width: 100%;
+    border:1px solid green;
+    position: relative;
+    padding-right: 30px;
+
+}
+.confirm .form-group span {
+    position: absolute;
+    top:45px;
+    right:25px;
+    color:#AAAAAA;
+}
+
+/**/
+.form-check-input-reverse{
+    margin-left: 10px;
+   }
+ .paymentSection input[type=checkbox],  .paymentSection input[type=radio] {
+    box-sizing: border-box;
+    padding: 0;
+    float: left;
+}
+.paymentSection .form-check label{
+    font-size: 14px;
+}
+.paymentSection .form-check label a{
+    font-size: 14px;
+    color:#f1512d;
+}
+.paymentSection .form-check input {
+    height: 20px;
+    width: 20px;
+}
+@media (max-width: 992px) {  
+    .paymentSection .form-group span{
+     display: none;
+    }
+    .confirm .form-group span {
+     display: none;
+    }
+}
+   
