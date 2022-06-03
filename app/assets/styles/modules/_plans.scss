@@ -544,6 +544,7 @@ background: #F4775C;
       .testi-wrap {
         height: 550px;
       }
+
     }
     #testimonial-area .childs{
       width:100%;
@@ -555,4 +556,10 @@ background: #F4775C;
       margin-top:-75px;
       border-radius: 20px;
       padding-top: 15px;
+    }
+    @media (max-width: 992px) {   /* responsive mobiles and small devicess*/
+     
+      .item .card{
+            margin:0 auto;
+          }
     }
