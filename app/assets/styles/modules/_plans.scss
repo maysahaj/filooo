@@ -188,11 +188,7 @@ background: #F4775C;
 			border:1px solid #F4775C;
 			margin-bottom: 20px;
 		}
-		#videos-section .title{
-			background-image: url("../images/airplane.gif");
-			background-size: cover;
-		
-		}
+
     @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
     #testimonial-area {
       
@@ -554,4 +550,9 @@ background: #F4775C;
       margin: 0 auto;
       width: 100%;
       padding: 20px;
+    }
+    .plans .col-md-4 .card{
+      margin-top:-75px;
+      border-radius: 20px;
+      padding-top: 15px;
     }

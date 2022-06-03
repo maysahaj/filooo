@@ -86,10 +86,10 @@
 }
 .subscribeInput{
 	border-radius: 10px;
-	height: 50px;
+	height: 40px;
 	background: #f8f8f8;
 	border:0px;
-	padding: 0px 190px 0px 28px;
+	padding: 0px 10px 0px 28px;
 }
 .subscribeForm{
 	position: relative;
@@ -98,11 +98,11 @@
 .subscribeBtn{
 	position: absolute;
 	border-radius: 10px;
-	height: 50px;
+	height: 41px;
 	width: 140px;
 	color: #000000;
 	border: 1px solid #000000;
-	right: 100px;
+	left:0px;
 	top: 0px;
 	background: #ffffffff;
 	font-weight: bold;
@@ -140,5 +140,8 @@
 		right: 0px;
 		float: left;
 
+	}
+	.footer_black{
+		padding-top:150px;
 	}
 }
