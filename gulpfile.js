@@ -15,13 +15,6 @@ const browserSync = require("browser-sync").create();
 const rename = require("gulp-rename");
 const ghPages = require("gulp-gh-pages");
 
-// Compile pug into Html
-/* function html() {
-	return src("app/assets/pug/*.pug")
-		.pipe(pug({ pretty: true }))
-		.pipe(dest("app"));
-} */
-
 // Compile sass into CSS
 function styles() {
 	return src("app/assets/styles/main.scss", { sourcemaps: true })
