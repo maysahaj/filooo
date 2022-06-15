@@ -1,11 +1,14 @@
 .videos {
-	.swiper-slide {
+	&__item {
+		height: 250px;
+		background: $mainLightGreen;
 		display: flex;
 		border-radius: .5rem;
 		transition: transform .3s ease-in, box-shadow .3s ease-in;
 
 		&:hover {
 			box-shadow: .25rem .25rem .25rem rgba(0, 0, 0, .3);
+			background: $mainLighterGreen;
 			transition-duration: 0.4s;
 			box-shadow: 2px 10px 40px 1px rgba(0, 0, 0, 0.5);
 		}
@@ -19,7 +22,7 @@
 			}
 		}
 
-		/* &--controls {
+		&--controls {
 			position: absolute;
 			content: '';
 			width: 50px;
@@ -27,6 +30,6 @@
 			border-radius: 50%;
 			background: #FFF;
 			margin: auto;
-		} */
+		}
 	}
 }

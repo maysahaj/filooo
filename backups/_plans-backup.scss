@@ -73,17 +73,17 @@ body {
 }
 
 
-.swiper-slide .card h5 {
+.item .card h5 {
 	font-weight: bold;
 	font-size: 15px;
 }
 
-.swiper-slide .card p {
+.item .card p {
 	font-weight: bold;
 	font-size: 12px;
 }
 
-.swiper-slide .card .img1 {
+.item .card .img1 {
 	position: relative;
 }
 
@@ -158,9 +158,10 @@ body {
 
 }
 
-.swiper-slide .card {
+.item .card {
 	border: 1px solid #cfcbcb;
 	border-radius: 10px;
+	width: 90%;
 
 }
 
@@ -170,7 +171,7 @@ body {
 	padding: 5px;
 }
 
-.swiper-slide .card img.card-icon {
+.item .card img.card-icon {
 	width: 35px;
 	height: 35px;
 	display: flex;
@@ -178,14 +179,14 @@ body {
 	margin-top: 40px
 }
 
-.swiper-slide .card img.rank-icon {
+.item .card img.rank-icon {
 
 	width: 30px;
 	height: 30px;
 	display: flex;
 }
 
-.swiper-slide .card:hover {
+.item .card:hover {
 	background: #F4775C;
 	transition: ease-in all 0.2s;
 	border-radius: 15px;
@@ -202,11 +203,11 @@ body {
 
 }
 
-.swiper-slide .card a {
+.item .card a {
 	background-color: #ffffffff;
 	color: #F4775C;
 	border: 1px solid #F4775C;
-	// margin-bottom: 20px;
+	margin-bottom: 20px;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
@@ -647,7 +648,7 @@ body {
 @media (max-width: 992px) {
 	/* responsive mobiles and small devicess*/
 
-	.swiper-slide .card {
+	.item .card {
 		margin: 0 auto;
 	}
 }

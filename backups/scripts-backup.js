@@ -80,17 +80,29 @@ jQuery(function ($) {
 		}
 	});
 });
-
-const swiper = new Swiper(".swiper", {
-	speed: 400,
-	spaceBetween: 20,
+$("#videos-section .owl-carousel").owlCarousel({
+	rtl: true,
 	loop: true,
-	// number of slides per view
-	slidesPerView: 5,
+	margin: 10,
+	items: 1,
+	responsiveClass: true,
+	autoplay: true,
+	autoplayHoverPause: true,
+	responsive: {
+		320: {
+			items: 1,
+		},
+		481: {
+			items: 1,
+		},
+		991: {
+			items: 3,
+		},
+		1025: {
+			items: 5,
+		},
+	},
 });
-
-$("#videos-section .swiper-wrapper").swiper;
-
 $(document).ready(
 	(function () {
 		$(".client-single").on("click", function (event) {
