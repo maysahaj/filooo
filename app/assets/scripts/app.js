@@ -5,28 +5,6 @@ jQuery(function ($) {
 	let hostName = location.hostname;
 
 	// Search feature
-	// Search feature
-	$(document).ready(function () {
-		var scrollTop = 0;
-		$(window).scroll(function () {
-			scrollTop = $(window).scrollTop();
-			if (scrollTop > 100) {
-				$(".navbar").addClass("scrollNavbar");
-				$(".backTop").addClass("visible");
-			} else if (scrollTop < 100) {
-				$(".navbar").removeClass("scrollNavbar");
-				$(".backTop").removeClass("visible");
-			}
-		});
-		$(".backTop").click(function () {
-			$("body , html").animate(
-				{
-					scrollTop: 0,
-				},
-				800
-			);
-		});
-	});
 	function openSearchOverlay() {
 		$(".search-btn").click(function (e) {
 			$(".search-overlay").addClass("search-overlay--active");
@@ -79,72 +57,54 @@ jQuery(function ($) {
 			location.hostname = `${hostName}/search.html`;
 		}
 	});
-});
 
-const swiper = new Swiper(".swiper", {
-	speed: 400,
-	spaceBetween: 20,
-	loop: true,
-	// number of slides per view
-	slidesPerView: 5,
-});
-
-$("#videos-section .swiper-wrapper").swiper;
-
-$(document).ready(
-	(function () {
-		$(".client-single").on("click", function (event) {
-			event.preventDefault();
-
-			var active = $(this).hasClass("active");
-
-			var parent = $(this).parents(".testi-wrap");
-
-			if (!active) {
-				var activeBlock = parent.find(".client-single.active");
-
-				var currentPos = $(this).attr("data-position");
-
-				var newPos = activeBlock.attr("data-position");
-
-				activeBlock
-					.removeClass("active")
-					.removeClass(newPos)
-					.addClass("inactive")
-					.addClass(currentPos);
-				activeBlock.attr("data-position", currentPos);
-
-				$(this)
-					.addClass("active")
-					.removeClass("inactive")
-					.removeClass(currentPos)
-					.addClass(newPos);
-				$(this).attr("data-position", newPos);
-			}
-		});
-	})(jQuery)
-);
-
-$("#testimonial-area .owl-carousel").owlCarousel({
-	rtl: true,
-	loop: true,
-	margin: 10,
-	items: 1,
-	responsiveClass: true,
-	autoplay: true,
-	autoplayHoverPause: true,
-	responsive: {
-		320: {
-			items: 1,
+	// Sliders
+	// Videos slider
+	const videosSwiper = new Swiper("#videos-section .swiper", {
+		speed: 400,
+		autoplay: {
+			delay: 2500,
+			disableOnInteraction: false,
 		},
-		481: {
-			items: 1,
-		},
-		991: {
-			items: 1,
-		},
-		1025: {
-			items: 1,
-		},
-	},
+		spaceBetween: 20,
+		loop: true,
+		// number of slides per view
+		slidesPerView: 5,
+	});
+
+	$("#videos-section .swiper").videosSwiper;
+
+	// Testimonials slider
+	const testimonialsSwiper = new Swiper("#testimonial-area .swiper", {
+		slidesPerView: 1,
+	});
+
+	$("#testimonial-area .swiper").testimonialsSwiper;
+
+	// Circular slider
+	$(".client-single").on("click", function (e) {
+		e.preventDefault();
+		var active = $(this).hasClass("active");
+		var parent = $(this).parents(".testi-wrap");
+
+		if (!active) {
+			var activeBlock = parent.find(".client-single.active");
+			var currentPos = $(this).attr("data-position");
+			var newPos = activeBlock.attr("data-position");
+
+			activeBlock
+				.removeClass("active")
+				.removeClass(newPos)
+				.addClass("inactive")
+				.addClass(currentPos);
+			activeBlock.attr("data-position", currentPos);
+
+			$(this)
+				.addClass("active")
+				.removeClass("inactive")
+				.removeClass(currentPos)
+				.addClass(newPos);
+			$(this).attr("data-position", newPos);
+		}
+	});
 });
