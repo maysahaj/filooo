@@ -65,7 +65,7 @@ function browserSyncServe(done) {
 
 // BrowserSync reload
 function browserSyncReload(done) {
-	browserSync.reload();
+	browserSync.reload({ stream: true });
 	done();
 }
 

@@ -1,7 +1,4 @@
-
 .navbar {
-	background: transparent !important;
-	
 	.navbar-nav {
 		margin-top: 1rem;
 
@@ -28,7 +25,7 @@
 				height: 3px;
 				transition: .3s ease-in;
 			}
-			
+
 
 			.nav-link {
 				color: #121212 !important;
@@ -66,7 +63,7 @@
 		.nav-link {
 			color: #000;
 		}
-		
+
 	}
 
 	&__actions {
@@ -88,25 +85,24 @@
 			color: #F4775C;
 		}
 	}
-	
-}
-.scrollNavbar{
-	background: #f3f1f0 !important; 
-	color: #F4775C;
 
 }
+
 .navbar-brand__box img {
 	width: 100%;
 	height: 60px;
 }
-.navbar__actions{
+
+.navbar__actions {
 	font-size: 20px;
 }
-.navbar .navbar-nav .nav-item .nav-link {
-    color: #121212 !important;
-    font-size: 1.2rem;
-}
+
 .navbar .navbar-nav .nav-item .nav-link {
 	color: #121212 !important;
-    font-size: 1.0rem;
+	font-size: 1.2rem;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+	color: #121212 !important;
+	font-size: 1.0rem;
 }

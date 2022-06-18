@@ -1,75 +1,102 @@
-<section class="videos py-5" id="videos-section">
-	<h2 class="section-title mb-3">بلدك في فيديو!</h2>
-	<p class="section-description">شاهد المئات من قصص الأطفال المتنوعة من قصص تاريخية وحيوانات وقصص تعزز قيم مجتمعية</p>
-	<div class="swiper">
-		<div class="item">
-			<div class="card">
-				<div class="top-card">
-					<img src="images/rank.png" class="rank-icon" alt="...">
-					<img src="images/play-btn-orange.png" class="card-icon" alt="...">
-				</div>
-				<div class="card-body text-center">
-					<h5 class="card-title">قصة القرد المتشائم </h5>
-					<p class="card-text">
-						مدينة من مدن فلسطين تم احتلالها سنة 1948 علي يد
-						جيش الاحتلال الصهيوني
-					</p>
-					<a href="singleStory.html" class="btn btn-card btn-primary">شاهد الان</a>
-				</div>
-			</div>
-		</div>
-		<div class="item">
-			<div class="card">
-				<div class="top-card">
-					<img src="images/rank.png" class="rank-icon" alt="...">
-					<img src="images/play-btn-orange.png" class="card-icon" alt="...">
-				</div>
-				<div class="card-body text-center">
-					<h5 class="card-title">قصة القرد المتشائم </h5>
-					<p class="card-text">
-						مدينة من مدن فلسطين تم احتلالها سنة 1948 علي يد
-						جيش الاحتلال الصهيوني
-					</p>
-					<a href="singleStory.html" class="btn btn-card btn-primary">شاهد الان</a>
-				</div>
-			</div>
-		</div>
-		<div class="item">
-			<div class="card">
-				<div class="top-card">
-					<img src="images/rank.png" class="rank-icon" alt="...">
-					<img src="images/play-btn-orange.png" class="card-icon" alt="...">
-				</div>
-				<div class="card-body text-center">
-					<h5 class="card-title">قصة القرد المتشائم </h5>
-					<p class="card-text">
-						مدينة من مدن فلسطين تم احتلالها سنة 1948 علي يد
-						جيش الاحتلال الصهيوني
-					</p>
-					<a href="#" class="btn btn-card btn-primary">شاهد الان</a>
-				</div>
-			</div>
-		</div>
-		<div class="item">
-			<div class="card">
-				<div class="top-card">
-					<img src="images/rank.png" class="rank-icon" alt="...">
-					<img src="images/play-btn-orange.png" class="card-icon" alt="...">
-				</div>
-				<div class="card-body text-center">
-					<h5 class="card-title">قصة القرد المتشائم </h5>
-					<p class="card-text">
-						مدينة من مدن فلسطين تم احتلالها سنة 1948 علي يد
-						جيش الاحتلال الصهيوني
-					</p>
-					<a href="#" class="btn btn-card btn-primary">شاهد الان</a>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Slider Test</title>
+
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+
+		body {
+			background-color: #333;
+			color: #F8F9FA;
+		}
+
+		.slider {
+			padding: 3rem 0;
+			border: .25rem solid red;
+			display: flex;
+			width: 500px;
+			height: 500px;
+			border-radius: 50%;
+			margin: 0 auto;
+		}
+
+		.slide {}
+
+		.slide-img {
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			border: 5px solid orange;
+		}
+
+		.slide-content {
+			opacity: 0;
+		}
+	</style>
+</head>
+
+<body>
+	<section class="slider">
+		<div class="slide">
+			<img src="https://plcehold.it/100x100" alt="" class="slide-img">
+			<div class="slide-content">
+				<h2 class="slide-content-name">John Doe</h2>
+				<div class="slide-content-quote">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias inventore, eveniet dignissimos vel esse
+						fugiat neque. Saepe voluptas, corrupti quos voluptatem dolorum harum recusandae quisquam.</p>
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="storySection">
-		<h2>اكتشف رفوف القصص
-			<a href=""><i class="fa-solid fa-arrow-left-long pr-2"></i></a>
-		</h2>
-	</div>
-</section>
+		<div class="slide">
+			<img src="https://plcehold.it/100x100" alt="" class="slide-img">
+			<div class="slide-content">
+				<h2 class="slide-content-name">John Doe</h2>
+				<div class="slide-content-quote">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias inventore, eveniet dignissimos vel esse
+						fugiat neque. Saepe voluptas, corrupti quos voluptatem dolorum harum recusandae quisquam.</p>
+				</div>
+			</div>
+		</div>
+		<div class="slide">
+			<img src="https://plcehold.it/100x100" alt="" class="slide-img">
+			<div class="slide-content">
+				<h2 class="slide-content-name">John Doe</h2>
+				<div class="slide-content-quote">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias inventore, eveniet dignissimos vel esse
+						fugiat neque. Saepe voluptas, corrupti quos voluptatem dolorum harum recusandae quisquam.</p>
+				</div>
+			</div>
+		</div>
+		<div class="slide">
+			<img src="https://plcehold.it/100x100" alt="" class="slide-img">
+			<div class="slide-content">
+				<h2 class="slide-content-name">John Doe</h2>
+				<div class="slide-content-quote">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias inventore, eveniet dignissimos vel esse
+						fugiat neque. Saepe voluptas, corrupti quos voluptatem dolorum harum recusandae quisquam.</p>
+				</div>
+			</div>
+		</div>
+		<div class="slide">
+			<img src="https://plcehold.it/100x100" alt="" class="slide-img">
+			<div class="slide-content">
+				<h2 class="slide-content-name">John Doe</h2>
+				<div class="slide-content-quote">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias inventore, eveniet dignissimos vel esse
+						fugiat neque. Saepe voluptas, corrupti quos voluptatem dolorum harum recusandae quisquam.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+
+</html>
