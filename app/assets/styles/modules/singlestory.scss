@@ -1,76 +1,94 @@
- .breadcrumb{
-    background: transparent;
-    color:#000;
-    font-size: 18px;
+ .breadcrumb {
+ 	background: transparent;
+ 	color: #000;
+ 	font-size: 18px;
 
-}
-.breadcrumb-item+.breadcrumb-item::before {
-    display: inline-block;
-    padding-left: .5rem;
-    color:#AAAAAA;
-    content: ">";
-    font-weight: bold;
-}
-.breadcrumb li a{
-    color:#000;
-    font-size: 16px;
-}
-.breadcrumb .active a{
-    color:#F4775C;
+ }
 
-}
-.titleSingle h2{
-    font-weight: bold;
-    text-align: right;
-    font-size: 30px;
-}
-.titleSingle a{
-    text-align: right;
-    font-size: 18px;
-    color:red;
-}
-.row iframe {
-    border-radius: 32px;
-    width: 100%;
-}
-.titleSingle  .titleh3 h3{
-color:#000;
-text-align: center;
-margin-top: 20px;
-font-size: 25px;
-font-weight: bold;
-}
-.likeStories{
-    margin-top: 50px;
+ .breadcrumb-item+.breadcrumb-item::before {
+ 	display: inline-block;
+ 	padding-left: .5rem;
+ 	color: #AAAAAA;
+ 	content: ">";
+ 	font-weight: bold;
+ }
 
-}
-.likeStories h2{
-    color:#000;
-    font-size: 25px;
-    font-weight: bold;
+ .breadcrumb li a {
+ 	color: #000;
+ 	font-size: 16px;
+ }
 
-}
+ .breadcrumb .active a {
+ 	color: #F4775C;
 
-.multiStory h2{
-    color:#000;
-    font-size: 25px;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 150px;
+ }
 
-}
-.multiStory p{
-    font-size: 14px;
-    text-align: center;
+ .titleSingle h2 {
+ 	font-weight: bold;
+ 	text-align: right;
+ 	font-size: 30px;
+ }
 
-}
-.stories-section__container:hover{
-    background-color: #F4775C;
-}
-.multiStory{
-    background-image: url("../images/feel.png");
-    background-repeat: no-repeat;
-    background-size:  cover;
-    padding: 50px;
+ .titleSingle a {
+ 	text-align: right;
+ 	font-size: 18px;
+ 	color: red;
+ }
 
-}
+ .row iframe {
+ 	border-radius: 32px;
+ 	width: 100%;
+ }
+
+ .titleSingle .titleh3 h3 {
+ 	color: #000;
+ 	text-align: center;
+ 	margin-top: 20px;
+ 	font-size: 25px;
+ 	font-weight: bold;
+ }
+
+ .likeStories {
+ 	margin-top: 50px;
+
+ }
+
+ .likeStories h2 {
+ 	color: #000;
+ 	font-size: 25px;
+ 	font-weight: bold;
+
+ }
+
+ .multiStory h2 {
+ 	color: #000;
+ 	font-size: 25px;
+ 	font-weight: bold;
+ 	text-align: center;
+ 	margin-top: 150px;
+ }
+
+ .multiStory p {
+ 	font-size: 14px;
+ 	text-align: center;
+ }
+
+ .stories-section__container:hover {
+ 	background-color: #F4775C;
+ }
+
+ .multiStory {
+ 	background-image: url("../images/elephant.gif");
+ 	background-repeat: no-repeat;
+ 	// background-size: cover;
+ 	background-position: center center;
+ 	padding: 50px;
+ }
+
+ .multiStory img {
+ 	height: 150px;
+ 	width: 150px;
+ 	display: block;
+ 	margin-left: auto;
+ 	margin-right: auto;
+ }

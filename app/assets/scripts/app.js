@@ -1,4 +1,10 @@
 jQuery(function ($) {
+	$(window).load(function () {
+		setTimeout(function () {
+			$("#login-form").modal();
+		}, 2000);
+	});
+
 	let windowHeight = $(window).height();
 	let navbarHeight = $(".navbar").height();
 	let footerHeight = $(".site-footer").height();
